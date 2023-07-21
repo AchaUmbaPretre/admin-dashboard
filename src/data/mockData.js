@@ -1,4 +1,4 @@
-import { tokens } from "../theme";
+import { tokens } from "../scenes/theme";
 
 export const mockDataTeam = [
   {
