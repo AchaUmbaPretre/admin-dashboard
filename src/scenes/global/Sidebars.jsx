@@ -38,11 +38,11 @@ const Sidebars = () => {
   const theme = useTheme();
   const colors = tokens(theme.palette.mode);
   const [isCollapsed, setIsCollapsed] = useState(false);
-  const [selected, setSelected] = useState('Dashboard');
+  const [selected, setSelected] = useState("Dashboard");
 
   return (
     <Box
-        sx={{
+      sx={{
         "& .pro-sidebar-inner": {
           background: `${colors.primary[400]} !important`,
         },
@@ -60,8 +60,9 @@ const Sidebars = () => {
         },
       }}
     >
-      <Sidebar >
+      <Sidebar collapsed={isCollapsed}>
         <Menu iconShape="square">
+          {/* LOGO AND MENU ICON */}
           <MenuItem
             onClick={() => setIsCollapsed(!isCollapsed)}
             icon={isCollapsed ? <MenuOutlinedIcon /> : undefined}
@@ -78,7 +79,7 @@ const Sidebars = () => {
                 ml="15px"
               >
                 <Typography variant="h3" color={colors.grey[100]}>
-                  ADMINIS
+                  ADMIN
                 </Typography>
                 <IconButton onClick={() => setIsCollapsed(!isCollapsed)}>
                   <MenuOutlinedIcon />
@@ -94,8 +95,8 @@ const Sidebars = () => {
                   alt="profile-user"
                   width="100px"
                   height="100px"
-                  src={`../../assets/user.png`}
-                  style={{ cursor: "pointer", borderRadius: "50%" }}
+                  src={`../../assets/acha.jpg`}
+                  style={{ cursor: "pointer", borderRadius: "50%", objectFit:'cover' }}
                 />
               </Box>
               <Box textAlign="center">
@@ -220,7 +221,7 @@ const Sidebars = () => {
         </Menu>
       </Sidebar>
     </Box>
-  )
-}
+  );
+};
 
-export default Sidebars
+export default Sidebars;
