@@ -1,3 +1,4 @@
+import { ColorModeContext, } from './scenes/theme';
 import './App.css';
 
 function App() {
