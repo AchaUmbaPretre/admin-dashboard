@@ -14,9 +14,18 @@ const Topbar = () => {
   const theme = useTheme();
   const colors = tokens(theme.palette.mode);
   return (
-    <div>
-        
-    </div>
+    <>
+      <Box display='flex' justifyContent='space-between' p={2}>
+        <Box
+          display='flex'
+          backgroundColor = {colors.primary[400]}
+          borderRadius='3px'
+        >
+
+        </Box>
+        <IconButton></IconButton>
+      </Box>
+    </>
   )
 }
 
