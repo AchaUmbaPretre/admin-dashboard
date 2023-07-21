@@ -1,5 +1,6 @@
 import { ColorModeContext, useMode} from './scenes/theme';
 import { CssBaseline, ThemeProvider  } from '@mui/material';
+import Topbar from './scenes/global/Topbar';
 import './App.css';
 
 function App() {
