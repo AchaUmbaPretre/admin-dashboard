@@ -192,7 +192,6 @@ export const tokens = (mode) => ({
     };
   };
   
-  // context for color mode
   export const ColorModeContext = createContext({
     toggleColorMode: () => {},
   });
